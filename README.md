@@ -20,8 +20,8 @@ This is a Flask-based web application for managing a library database. It allows
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/library-management.git
-   cd library-management
+   git clone git@github.com:sdfarshid/book-alchemy.git
+   cd book-alchemy
    ```
 
 2. **Install dependencies**:
@@ -30,6 +30,7 @@ This is a Flask-based web application for managing a library database. It allows
    ```
 
 3. **Set up the database**:
+   Ensure the data directory exists and create an .env file in the root of the project. You can configure your environment variables in this file.
    Ensure the `data` directory exists and run the app to initialize the database.
    ```bash
    python app.py 
@@ -40,7 +41,7 @@ This is a Flask-based web application for managing a library database. It allows
    python -c 'from app import create_database; create_database()'
    ```
 
-5. **Run the application**:
+4. **Run the application**:
    ```bash
    python app.py  OR  flask --app app run
    ```
