@@ -1,10 +1,13 @@
 import secrets
-
 from flask import Flask, render_template, request, flash, redirect, url_for
 from data_models import db, Author, Book
 import os
+from dotenv import load_dotenv
 
-DATABASE_NAME = "data/library.sqlite"
+load_dotenv()
+
+DATABASE_NAME = os.getenv("DATABASE_NAME")
+
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
